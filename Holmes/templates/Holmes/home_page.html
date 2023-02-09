@@ -8,7 +8,7 @@
 {% endif %}
 
 {% endblock link %}
-
+{% comment %} 
 {% block logout %}
 {% if user.is_authenticated %}
 <p class="mr-5">Welcome, {{ user.name }}!</p>
@@ -24,7 +24,7 @@
 <a href="{% url 'register' %}"class="mr-5 hover:text-white">Sign up</a>
 
 {% endif %}
-{% endblock logout %}
+{% endblock logout %} {% endcomment %}
 
 
 {% comment %} {% endif %} {% endcomment %}

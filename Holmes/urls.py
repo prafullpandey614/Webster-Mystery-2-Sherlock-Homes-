@@ -8,7 +8,8 @@ urlpatterns = [
     path("login",views.login_view,name="login"),
     path("logout",views.logout_view,name="logout"),
     path("profile",views.profile,name="profile"),
-    path("jobs",views.profile,name="jobs"),
+    path("jobs",views.jobs,name="jobs"),
+    path("temp-signup",views.tempsign,name="temps"),
     # path("register",views.register),
 ]
 if settings.DEBUG:

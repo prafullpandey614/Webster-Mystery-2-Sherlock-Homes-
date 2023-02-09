@@ -44,3 +44,5 @@ def profile(request):
     return render(request,'Holmes/profile.html',{"user": user})
 def jobs(request):
     return render(request,'Holmes/jobs.html')
+def tempsign(request):
+    return render(request,'Holmes/temp_register.html')

@@ -28,12 +28,27 @@
                 {% comment %} <a class="mr-5 hover:text-white">Login</a>
                 <a class="mr-5 hover:text-white">Fourth Link</a>
                 <a class="mr-5 hover:text-white">Fourth Link</a> {% endcomment %}
+                
                {% block link %}{% endblock link %}
               </nav>
              
              
               {% block logout %}
-              {% endblock logout %}
+{% if user.is_authenticated %}
+<p class="mr-5">Welcome, {{ user.name }}!</p>
+<a href="{% url 'logout' %}"class="mr-5 hover:text-white">
+<button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Logout
+  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+    <path d="M5 12h14M12 5l7 7-7 7"></path>
+  </svg>
+</button>
+</a>
+{% else %}
+<a href="{% url 'login' %}"class="mr-5 hover:text-white">Login</a>
+<a href="{% url 'register' %}"class="mr-5 hover:text-white">Sign up</a>
+
+{% endif %}
+{% endblock logout %}
             </div>
           </header>
         {% block body %}
