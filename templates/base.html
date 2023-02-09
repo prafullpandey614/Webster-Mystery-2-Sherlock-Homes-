@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mystery Man Job Search</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header class="text-gray-400 bg-gray-900 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <svg xmlns="/static/logo.jfif" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Sherlock Holmes</span>
+              </a>
+              <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white" href={% url 'home' %}>Home</a>
+                <a class="mr-5 hover:text-white" href={% url 'jobs' %}>Jobs</a>
+                {% comment %} <a class="mr-5 hover:text-white">Login</a>
+                <a class="mr-5 hover:text-white">Fourth Link</a>
+                <a class="mr-5 hover:text-white">Fourth Link</a> {% endcomment %}
+               {% block link %}{% endblock link %}
+              </nav>
+             
+             
+              {% block logout %}
+              {% endblock logout %}
+            </div>
+          </header>
+        {% block body %}
+
+        {% endblock body %}
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
