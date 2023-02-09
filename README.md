@@ -3,11 +3,11 @@ This Project is build for webster hackathon
 ## Problem Statement :
  $$(Q)$$ Sherlock Holme's is Looking to hire Someone who can help him to solve Murder Mystery. He wants me to build a Job Portal through which he can hire the best detectives from all over the worlds .
 ## Tech Stack :
- > Django
- > Tailwind CSS
- > Html
- > Css
- > Javascript
+ * Django
+ * Tailwind CSS
+ * Html
+ * Css
+ * Javascript
 
 <img width="950" alt="Screenshot 2023-02-09 201149" src="https://user-images.githubusercontent.com/81959129/217898352-c3567a3c-6b1a-46cb-af62-2d1c23aa4a70.png">
 <img width="947" alt="Screenshot 2023-02-09 201221" src="https://user-images.githubusercontent.com/81959129/217898440-a0e98f90-5bce-46e0-a504-94c8e2550f45.png">
