@@ -2,6 +2,7 @@
 {% load static %}
 {% block link %}
 {% if user.is_authenticated %}
+<<<<<<< HEAD
 
 <a href="{% url 'profile' %}"class="mr-5 hover:text-white">Profile</a>
 
@@ -13,11 +14,24 @@
 {% if user.is_authenticated %}
 <p class="mr-5">Welcome, {{ user.name }}!</p>
 <a href="{% url 'logout' %}"class="mr-5 hover:text-white">
+=======
+<p>Welcome, {{ user.name }}!</p>
+<a href="{% url 'logout' %}">Logout</a>
+{% else %}
+
+<a href="{% url 'login' %}">Login</a>
+<a href="{% url 'register' %}">Sign up</a>
+{% endif %}
+
+{% endblock link %}
+{% block logout %}
+>>>>>>> b732d3a2900f209d4833834d5712a2454480295f
 <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Logout
   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
     <path d="M5 12h14M12 5l7 7-7 7"></path>
   </svg>
 </button>
+<<<<<<< HEAD
 </a>
 {% else %}
 <a href="{% url 'login' %}"class="mr-5 hover:text-white">Login</a>
@@ -27,6 +41,9 @@
 {% endblock logout %} {% endcomment %}
 
 
+=======
+{% endblock logout %}
+>>>>>>> b732d3a2900f209d4833834d5712a2454480295f
 {% comment %} {% endif %} {% endcomment %}
 
 {% block body %}
@@ -34,8 +51,13 @@
 <section class="text-gray-400 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
+<<<<<<< HEAD
       <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Sherlock is Looking for Detectives</h1>
       <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">We are Hiring Intelligent Minds Like You, Please Apply if you have relevant Skills.</p>
+=======
+      <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Raw Denim Heirloom Man Braid</h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+>>>>>>> b732d3a2900f209d4833834d5712a2454480295f
     </div>
     <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
       <div class="p-2 sm:w-1/2 w-full">
@@ -44,7 +66,11 @@
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
+<<<<<<< HEAD
           <span class="title-font font-medium text-white">Be a Critical Thinker</span>
+=======
+          <span class="title-font font-medium text-white">Authentic Cliche Forage</span>
+>>>>>>> b732d3a2900f209d4833834d5712a2454480295f
         </div>
       </div>
       <div class="p-2 sm:w-1/2 w-full">
@@ -53,7 +79,11 @@
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
+<<<<<<< HEAD
           <span class="title-font font-medium text-white">Built a Integrity Character with ethical Behaviour</span>
+=======
+          <span class="title-font font-medium text-white">Kinfolk Chips Snackwave</span>
+>>>>>>> b732d3a2900f209d4833834d5712a2454480295f
         </div>
       </div>
       <div class="p-2 sm:w-1/2 w-full">
@@ -71,7 +101,11 @@
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
+<<<<<<< HEAD
           <span class="title-font font-medium text-white">Intelligency is the Key</span>
+=======
+          <span class="title-font font-medium text-white">Typewriter Polaroid Cray</span>
+>>>>>>> b732d3a2900f209d4833834d5712a2454480295f
         </div>
       </div>
       <div class="p-2 sm:w-1/2 w-full">
@@ -80,7 +114,11 @@
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
+<<<<<<< HEAD
           <span class="title-font font-medium text-white">Try to pay Attention to the details</span>
+=======
+          <span class="title-font font-medium text-white">Pack Truffaut Blue</span>
+>>>>>>> b732d3a2900f209d4833834d5712a2454480295f
         </div>
       </div>
       <div class="p-2 sm:w-1/2 w-full">
@@ -89,11 +127,19 @@
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
             <path d="M22 4L12 14.01l-3-3"></path>
           </svg>
+<<<<<<< HEAD
           <span class="title-font font-medium text-white">Develop  Good Communication Skills</span>
         </div>
       </div>
     </div>
     <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Apply For Openings</button>
+=======
+          <span class="title-font font-medium text-white">The Catcher In The Rye</span>
+        </div>
+      </div>
+    </div>
+    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+>>>>>>> b732d3a2900f209d4833834d5712a2454480295f
   </div>
 </section>
 
