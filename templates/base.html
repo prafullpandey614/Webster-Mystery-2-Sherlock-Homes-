@@ -25,6 +25,12 @@
               <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
                 <a class="mr-5 hover:text-white" href={% url 'home' %}>Home</a>
                 <a class="mr-5 hover:text-white" href={% url 'jobs' %}>Jobs</a>
+                <a class="mr-5 hover:text-white" href='admin/'>Admin</a>
+                {% if user.is_authenticated %}
+
+<a href="{% url 'profile' %}"class="mr-5 hover:text-white">Profile</a>
+
+{% endif %}
                 {% comment %} <a class="mr-5 hover:text-white">Login</a>
                 <a class="mr-5 hover:text-white">Fourth Link</a>
                 <a class="mr-5 hover:text-white">Fourth Link</a> {% endcomment %}

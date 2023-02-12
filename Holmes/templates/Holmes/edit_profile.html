@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <form action="edit-profile" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit"  class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg" value="submit">
+        </form>
+     
+        <!-- <button class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button> -->
+      </div>
+    </div>
+  </section>
+<!-- {{form.dp}} -->
+
+{% endblock body %}

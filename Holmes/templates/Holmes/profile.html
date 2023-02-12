@@ -9,10 +9,10 @@
           <div class="text-center lg:w-2/3 w-full">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">{{user.name}}</h1>
             <p class="leading-relaxed mb-8">"Experienced Detective with a passion for solving complex cases and bringing justice to victims. With over X years of service in the law enforcement field, I have honed my skills in investigation, evidence analysis, and interview techniques. </p>
-            <div class="flex justify-center">
-              <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Application Status</button>
-            <a href={% url 'jobs' %}> 
-                <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Jobs Applied</button>
+          <a href="status">  <div class="flex justify-center">
+              <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Application Status</button> </a>
+            <a href={% url 'edit' %}> 
+                <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Edit Profile</button>
             </a>
             </div>
         </div>

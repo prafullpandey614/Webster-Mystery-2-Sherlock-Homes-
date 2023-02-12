@@ -10,6 +10,9 @@ urlpatterns = [
     path("profile",views.profile,name="profile"),
     path("jobs",views.jobs,name="jobs"),
     path("temp-signup",views.tempsign,name="temps"),
+    path("edit-profile",views.edit_profile,name="edit"),
+    path("apply/<int:pk>",views.applyPage,name="apply"),
+    path("status",views.status,name="status"),
     # path("register",views.register),
 ]
 if settings.DEBUG:
