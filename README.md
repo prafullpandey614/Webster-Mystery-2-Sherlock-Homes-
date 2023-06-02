@@ -6,6 +6,7 @@ This Project is build for webster hackathon
  * Django
  * Tailwind CSS
  * Html
+ * JWT 
  * Css
  * Javascript
 
